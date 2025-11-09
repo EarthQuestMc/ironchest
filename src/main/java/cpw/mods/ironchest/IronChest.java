@@ -12,10 +12,8 @@ package cpw.mods.ironchest;
 
 import cpw.mods.ironchest.block.BlockIronChest;
 import cpw.mods.ironchest.item.ItemIronChest;
-import cpw.mods.ironchest.utils.ChestChangerType;
-import cpw.mods.ironchest.utils.IronChestType;
-import cpw.mods.ironchest.utils.PacketHandler;
-import cpw.mods.ironchest.utils.Version;
+import cpw.mods.ironchest.utils.*;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
@@ -43,6 +41,7 @@ public class IronChest {
     public static IronChest instance;
     public static boolean CACHE_RENDER = true;
     public static boolean OCELOTS_SITONCHESTS = true;
+    public static final CreativeTabs tabIronChest = new CreativeTabsIronChest("tabIronChest");
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
