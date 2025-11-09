@@ -33,7 +33,7 @@ version = "${versionInfo['IronChest.version']}"
 // This is our group. I'm cpw.mods
 group= "cpw.mods" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 // This is our actual project within the group. Note: FML has "fml" here. But this is ironchest.
-archivesBaseName = "ironchest"
+archivesBaseName = "questironchest"
 
 // Setup the forge minecraft plugin data. Specify the preferred forge/minecraft version here
 minecraft {
