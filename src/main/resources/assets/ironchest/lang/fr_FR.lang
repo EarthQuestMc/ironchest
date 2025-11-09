@@ -1,4 +1,4 @@
-#fr_FR translated by robin4002
+#fr_FR translated by robin4002 and MikaM06 (redev)
 
 tile.ironchest:IRON.name=Coffre en Fer
 tile.ironchest:GOLD.name=Coffre en Or
@@ -17,4 +17,4 @@ item.ironchest:DIAMONDCRYSTAL.name=Amélioration de coffre en diamant à crital
 item.ironchest:WOODIRON.name=Amélioration de coffre en bois à fer
 item.ironchest:WOODCOPPER.name=Amélioration de coffre en bois à cuivre
 item.ironchest:DIAMONDOBSIDIAN.name=Amélioration de coffre en diamant à obsidienne
-item.Group.tabIronChests=Iron Chests
+itemGroup.tabIronChest=Iron Chest
