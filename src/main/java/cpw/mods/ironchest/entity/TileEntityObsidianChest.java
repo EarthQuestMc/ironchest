@@ -1,4 +1,6 @@
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.entity;
+
+import cpw.mods.ironchest.IronChestType;
 
 public class TileEntityObsidianChest extends TileEntityIronChest {
 

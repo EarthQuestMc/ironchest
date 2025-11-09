@@ -8,14 +8,14 @@
  * Contributors:
  *     cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.entity;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 
-import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.ironchest.*;
+import cpw.mods.ironchest.block.BlockIronChest;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -33,7 +33,7 @@ public class TileEntityIronChest extends TileEntity implements IInventory {
     public float prevLidAngle;
     public float lidAngle;
     private int numUsingPlayers;
-    private IronChestType type;
+    public IronChestType type;
     public ItemStack[] chestContents;
     private ItemStack[] topStacks;
     private int facing;
@@ -94,7 +94,7 @@ public class TileEntityIronChest extends TileEntity implements IInventory {
         sortTopStacks();
     }
 
-    protected void sortTopStacks()
+    public void sortTopStacks()
     {
         if (!type.isTransparent() || (worldObj != null && worldObj.isRemote))
         {
@@ -500,7 +500,7 @@ public class TileEntityIronChest extends TileEntity implements IInventory {
         return false;
     }
 
-    void rotateAround(ForgeDirection axis)
+    public void rotateAround(ForgeDirection axis)
     {
         setFacing((byte)ForgeDirection.getOrientation(facing).getRotation(axis).ordinal());
         worldObj.addBlockEvent(this.xCoord, this.yCoord, this.zCoord, IronChest.ironChestBlock, 2, getFacing());

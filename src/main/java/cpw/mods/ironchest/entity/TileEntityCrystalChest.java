@@ -8,12 +8,13 @@
  * Contributors:
  *     cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.entity;
 
-public class TileEntityGoldChest extends TileEntityIronChest {
+import cpw.mods.ironchest.IronChestType;
 
-    public TileEntityGoldChest()
+public class TileEntityCrystalChest extends TileEntityIronChest {
+    public TileEntityCrystalChest()
     {
-        super(IronChestType.GOLD);
+        super(IronChestType.CRYSTAL);
     }
 }

@@ -10,6 +10,8 @@
  ******************************************************************************/
 package cpw.mods.ironchest;
 
+import cpw.mods.ironchest.block.BlockIronChest;
+import cpw.mods.ironchest.entity.TileEntityIronChest;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;

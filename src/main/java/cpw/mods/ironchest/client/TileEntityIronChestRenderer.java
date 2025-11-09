@@ -35,7 +35,7 @@ import com.google.common.collect.ImmutableMap.Builder;
 import com.google.common.primitives.SignedBytes;
 import cpw.mods.ironchest.IronChestType;
 import cpw.mods.ironchest.MappableItemStackWrapper;
-import cpw.mods.ironchest.TileEntityIronChest;
+import cpw.mods.ironchest.entity.TileEntityIronChest;
 
 public class TileEntityIronChestRenderer extends TileEntitySpecialRenderer {
     @SuppressWarnings("unused")

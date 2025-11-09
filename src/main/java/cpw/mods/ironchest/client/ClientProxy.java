@@ -18,7 +18,7 @@ import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.ironchest.CommonProxy;
 import cpw.mods.ironchest.IronChestType;
-import cpw.mods.ironchest.TileEntityIronChest;
+import cpw.mods.ironchest.entity.TileEntityIronChest;
 
 public class ClientProxy extends CommonProxy {
     @Override

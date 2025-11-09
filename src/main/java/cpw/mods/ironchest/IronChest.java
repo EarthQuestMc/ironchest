@@ -10,6 +10,7 @@
  ******************************************************************************/
 package cpw.mods.ironchest;
 
+import cpw.mods.ironchest.block.BlockIronChest;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;

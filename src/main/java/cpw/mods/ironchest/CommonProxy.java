@@ -10,6 +10,7 @@
  ******************************************************************************/
 package cpw.mods.ironchest;
 
+import cpw.mods.ironchest.entity.TileEntityIronChest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;

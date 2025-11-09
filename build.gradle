@@ -3,18 +3,18 @@ buildscript {
     repositories {
         mavenCentral()
         maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+            name = "earthQuestForge"
+            url = "https://maven.earthquest.fr/forge"
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.0.+') {
+
+    changing = true
+		}
     }
 }
+
 
 // Apply the forge plugin - this adds all the magic for automatically obfuscating, deobfuscating etc
 apply plugin: 'forge'

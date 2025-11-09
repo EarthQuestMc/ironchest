@@ -8,17 +8,17 @@
  * Contributors:
  *     cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.block;
 
 import static net.minecraftforge.common.util.ForgeDirection.DOWN;
 import static net.minecraftforge.common.util.ForgeDirection.UP;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.google.common.collect.Lists;
-
+import cpw.mods.ironchest.IronChest;
+import cpw.mods.ironchest.IronChestType;
+import cpw.mods.ironchest.entity.TileEntityIronChest;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -103,15 +103,7 @@ public class BlockIronChest extends BlockContainer {
         return null;
     }
 
-    @Override
-    public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune)
-    {
-        ArrayList<ItemStack> items = Lists.newArrayList();
-        ItemStack stack = new ItemStack(this,1,metadata);
-        IronChestType.values()[IronChestType.validateMeta(metadata)].adornItemDrop(stack);
-        items.add(stack);
-        return items;
-    }
+
     @Override
     public boolean onBlockActivated(World world, int i, int j, int k, EntityPlayer player, int i1, float f1, float f2, float f3)
     {

@@ -13,14 +13,15 @@ package cpw.mods.ironchest;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import cpw.mods.ironchest.block.BlockIronChest;
+import cpw.mods.ironchest.entity.*;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagByte;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -35,9 +36,8 @@ public enum IronChestType {
     SILVER(72, 9, false, "Silver Chest", "silverchest.png", 4, Arrays.asList("ingotSilver"), TileEntitySilverChest.class, "mmmm3mmmm", "mGmG0GmGm"),
     CRYSTAL(108, 12, true, "Crystal Chest", "crystalchest.png", 5, Arrays.asList("blockGlass"), TileEntityCrystalChest.class, "GGGGPGGGG"),
     OBSIDIAN(108, 12, false, "Obsidian Chest", "obsidianchest.png", 6, Arrays.asList("obsidian"), TileEntityObsidianChest.class, "mmmm2mmmm"),
-    DIRTCHEST9000(1, 1, false, "Dirt Chest 9000", "dirtchest.png",7,Arrays.asList("dirt"), TileEntityDirtChest.class,Item.getItemFromBlock(Blocks.dirt),"mmmmCmmmm"),
     WOOD(0, 0, false, "", "", -1, Arrays.asList("plankWood"), null);
-    int size;
+    public int size;
     private int rowLength;
     public String friendlyName;
     private boolean tieredChest;
@@ -144,10 +144,6 @@ public enum IronChestType {
         {
             return Blocks.obsidian;
         }
-        else if (mat.equals("dirt"))
-        {
-            return Blocks.dirt;
-        }
         return mat;
     }
 
@@ -234,12 +230,5 @@ public enum IronChestType {
     public boolean acceptsStack(ItemStack itemstack)
     {
         return itemFilter == null || itemstack == null || itemstack.getItem() == itemFilter;
-    }
-    public void adornItemDrop(ItemStack item)
-    {
-        if (this == DIRTCHEST9000)
-        {
-            item.setTagInfo("dirtchest", new NBTTagByte((byte) 1));
-        }
     }
 }

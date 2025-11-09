@@ -84,15 +84,11 @@ public class ContainerIronChest extends Container {
 
     protected void layoutContainer(IInventory playerInventory, IInventory chestInventory, IronChestType type, int xSize, int ySize)
     {
-        if (type == IronChestType.DIRTCHEST9000) {
-            addSlotToContainer(type.makeSlot(chestInventory, 0, 12 + 4 * 18, 8 + 2 * 18));
-        } else {
-            for (int chestRow = 0; chestRow < type.getRowCount(); chestRow++)
+        for (int chestRow = 0; chestRow < type.getRowCount(); chestRow++)
+        {
+            for (int chestCol = 0; chestCol < type.getRowLength(); chestCol++)
             {
-                for (int chestCol = 0; chestCol < type.getRowLength(); chestCol++)
-                {
-                    addSlotToContainer(type.makeSlot(chestInventory, chestCol + chestRow * type.getRowLength(), 12 + chestCol * 18, 8 + chestRow * 18));
-                }
+                addSlotToContainer(type.makeSlot(chestInventory, chestCol + chestRow * type.getRowLength(), 12 + chestCol * 18, 8 + chestRow * 18));
             }
         }
 
@@ -101,10 +97,8 @@ public class ContainerIronChest extends Container {
         {
             for (int playerInvCol = 0; playerInvCol < 9; playerInvCol++)
             {
-                addSlotToContainer(new Slot(playerInventory, playerInvCol + playerInvRow * 9 + 9, leftCol + playerInvCol * 18, ySize - (4 - playerInvRow) * 18
-                        - 10));
+                addSlotToContainer(new Slot(playerInventory, playerInvCol + playerInvRow * 9 + 9, leftCol + playerInvCol * 18, ySize - (4 - playerInvRow) * 18 - 10));
             }
-
         }
 
         for (int hotbarSlot = 0; hotbarSlot < 9; hotbarSlot++)
@@ -112,6 +106,7 @@ public class ContainerIronChest extends Container {
             addSlotToContainer(new Slot(playerInventory, hotbarSlot, leftCol + hotbarSlot * 18, ySize - 24));
         }
     }
+
 
     public EntityPlayer getPlayer()
     {

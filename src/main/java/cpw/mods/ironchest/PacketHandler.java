@@ -11,6 +11,7 @@
 package cpw.mods.ironchest;
 
 import cpw.mods.fml.common.network.ByteBufUtils;
+import cpw.mods.ironchest.entity.TileEntityIronChest;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
