@@ -10,7 +10,7 @@
  ******************************************************************************/
 package cpw.mods.ironchest.entity;
 
-import cpw.mods.ironchest.IronChestType;
+import cpw.mods.ironchest.utils.IronChestType;
 
 public class TileEntityCopperChest extends TileEntityIronChest {
     public TileEntityCopperChest()

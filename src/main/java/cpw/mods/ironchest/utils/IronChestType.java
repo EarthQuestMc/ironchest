@@ -8,7 +8,7 @@
  * Contributors:
  *     cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

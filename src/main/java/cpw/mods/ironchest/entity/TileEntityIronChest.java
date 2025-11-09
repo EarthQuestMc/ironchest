@@ -16,6 +16,9 @@ import java.util.List;
 
 import cpw.mods.ironchest.*;
 import cpw.mods.ironchest.block.BlockIronChest;
+import cpw.mods.ironchest.item.ItemChestChanger;
+import cpw.mods.ironchest.utils.IronChestType;
+import cpw.mods.ironchest.utils.PacketHandler;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;

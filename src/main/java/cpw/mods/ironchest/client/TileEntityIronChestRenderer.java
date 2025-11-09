@@ -33,7 +33,7 @@ import net.minecraft.util.ResourceLocation;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMap.Builder;
 import com.google.common.primitives.SignedBytes;
-import cpw.mods.ironchest.IronChestType;
+import cpw.mods.ironchest.utils.IronChestType;
 import cpw.mods.ironchest.MappableItemStackWrapper;
 import cpw.mods.ironchest.entity.TileEntityIronChest;
 

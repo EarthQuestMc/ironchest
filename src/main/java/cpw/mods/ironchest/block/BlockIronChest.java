@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Random;
 
 import cpw.mods.ironchest.IronChest;
-import cpw.mods.ironchest.IronChestType;
+import cpw.mods.ironchest.utils.IronChestType;
 import cpw.mods.ironchest.entity.TileEntityIronChest;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;

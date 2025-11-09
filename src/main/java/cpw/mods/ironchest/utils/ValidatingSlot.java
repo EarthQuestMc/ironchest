@@ -1,4 +1,4 @@
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.utils;
 
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;

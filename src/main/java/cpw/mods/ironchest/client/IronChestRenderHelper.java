@@ -16,7 +16,7 @@ import net.minecraft.client.renderer.tileentity.TileEntityRendererChestHelper;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import com.google.common.collect.Maps;
 import cpw.mods.ironchest.IronChest;
-import cpw.mods.ironchest.IronChestType;
+import cpw.mods.ironchest.utils.IronChestType;
 import cpw.mods.ironchest.entity.TileEntityIronChest;
 
 public class IronChestRenderHelper extends TileEntityRendererChestHelper {

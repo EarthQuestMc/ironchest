@@ -11,6 +11,11 @@
 package cpw.mods.ironchest;
 
 import cpw.mods.ironchest.block.BlockIronChest;
+import cpw.mods.ironchest.item.ItemIronChest;
+import cpw.mods.ironchest.utils.ChestChangerType;
+import cpw.mods.ironchest.utils.IronChestType;
+import cpw.mods.ironchest.utils.PacketHandler;
+import cpw.mods.ironchest.utils.Version;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;

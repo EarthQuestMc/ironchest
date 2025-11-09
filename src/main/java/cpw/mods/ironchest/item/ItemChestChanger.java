@@ -8,8 +8,11 @@
  * Contributors:
  *     cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.item;
 
+import cpw.mods.ironchest.utils.ChestChangerType;
+import cpw.mods.ironchest.IronChest;
+import cpw.mods.ironchest.utils.IronChestType;
 import cpw.mods.ironchest.block.BlockIronChest;
 import cpw.mods.ironchest.entity.TileEntityIronChest;
 import net.minecraft.client.renderer.texture.IIconRegister;

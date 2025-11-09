@@ -18,7 +18,7 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 import cpw.mods.ironchest.ContainerIronChest;
-import cpw.mods.ironchest.IronChestType;
+import cpw.mods.ironchest.utils.IronChestType;
 import cpw.mods.ironchest.entity.TileEntityIronChest;
 
 public class GUIChest extends GuiContainer {

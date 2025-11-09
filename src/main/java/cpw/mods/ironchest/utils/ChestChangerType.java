@@ -4,16 +4,18 @@
  *
  * Contributors: cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.utils;
 
-import static cpw.mods.ironchest.IronChestType.COPPER;
-import static cpw.mods.ironchest.IronChestType.CRYSTAL;
-import static cpw.mods.ironchest.IronChestType.DIAMOND;
-import static cpw.mods.ironchest.IronChestType.GOLD;
-import static cpw.mods.ironchest.IronChestType.IRON;
-import static cpw.mods.ironchest.IronChestType.OBSIDIAN;
-import static cpw.mods.ironchest.IronChestType.SILVER;
-import static cpw.mods.ironchest.IronChestType.WOOD;
+import static cpw.mods.ironchest.utils.IronChestType.COPPER;
+import static cpw.mods.ironchest.utils.IronChestType.CRYSTAL;
+import static cpw.mods.ironchest.utils.IronChestType.DIAMOND;
+import static cpw.mods.ironchest.utils.IronChestType.GOLD;
+import static cpw.mods.ironchest.utils.IronChestType.IRON;
+import static cpw.mods.ironchest.utils.IronChestType.OBSIDIAN;
+import static cpw.mods.ironchest.utils.IronChestType.SILVER;
+import static cpw.mods.ironchest.utils.IronChestType.WOOD;
+
+import cpw.mods.ironchest.item.ItemChestChanger;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;

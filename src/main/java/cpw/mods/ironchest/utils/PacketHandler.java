@@ -8,9 +8,10 @@
  * Contributors:
  *     cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.utils;
 
 import cpw.mods.fml.common.network.ByteBufUtils;
+import cpw.mods.ironchest.IronChest;
 import cpw.mods.ironchest.entity.TileEntityIronChest;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

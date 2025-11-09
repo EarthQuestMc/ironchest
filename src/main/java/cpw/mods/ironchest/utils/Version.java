@@ -4,7 +4,7 @@
  *
  * Contributors: cpw - initial API and implementation
  ******************************************************************************/
-package cpw.mods.ironchest;
+package cpw.mods.ironchest.utils;
 
 import java.util.Properties;
 
@@ -16,7 +16,7 @@ public class Version {
     @SuppressWarnings("unused")
     private static String mcversion;
 
-    static void init(Properties properties)
+    public static void init(Properties properties)
     {
         if (properties != null)
         {
