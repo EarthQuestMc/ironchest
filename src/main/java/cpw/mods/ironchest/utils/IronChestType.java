@@ -140,10 +140,6 @@ public enum IronChestType {
 
     public static Object translateOreName(String mat)
     {
-        if (mat.equals("obsidian"))
-        {
-            return Blocks.obsidian;
-        }
         return mat;
     }
 
